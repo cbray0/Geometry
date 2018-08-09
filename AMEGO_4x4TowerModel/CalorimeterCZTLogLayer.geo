@@ -1,4 +1,4 @@
-//CZT Detectors confugured in logs 
+//CZT Detectors confugured in logs
 
 /////Use these lines to run geometry as standalone
 //SurroundingSphere 100.0  0.0  0.0  0.0  100.0
@@ -13,6 +13,23 @@ CZTBar.Visibility 0
 CZTBar.Color 1
 CZTBar.Material CZT
 CZTBar.Shape BRIK 0.4 0.4 2.0
+
+AngerCamera DCalCZT
+DCalCZT.SensitiveVolume CZTBar
+DCalCZT.DetectorVolume CZTBar
+DCalCZT.StructuralPitch 0 0 0
+DCalCZT.StructuralOffset 0 0 0
+DCalCZT.Positioning XYZ
+DCalCZT.PositionResolution 0. 1.
+DCalCZT.PositionResolution 1000. 1.
+DCalCZT.NoiseThreshold 20
+DCalCZT.TriggerThreshold 50
+DCalCZT.EnergyResolution Gauss   40    40   4
+DCalCZT.EnergyResolution Gauss  100   100   2
+DCalCZT.EnergyResolution Gauss  500   500   5
+DCalCZT.EnergyResolution Gauss  1000  1000  10
+DCalCZT.EnergyResolution Gauss  2000  2000  30
+DCalCZT.EnergyResolution Gauss  5000  5000  75
 
 // Create a block of CZT to add to the passive frame
 Volume CZTBlock
@@ -50,6 +67,23 @@ CZTSideBar.Color 1
 CZTSideBar.Material CZT
 CZTSideBar.Shape BRIK 0.4 0.4 2.0
 
+AngerCamera DCalCZTSide
+DCalCZTSide.SensitiveVolume CZTSideBar
+DCalCZTSide.DetectorVolume CZTSideBar
+DCalCZTSide.StructuralPitch 0 0 0
+DCalCZTSide.StructuralOffset 0 0 0
+DCalCZTSide.Positioning XYZ
+DCalCZTSide.PositionResolution 0. 1.
+DCalCZTSide.PositionResolution 1000. 1.
+DCalCZTSide.NoiseThreshold 20
+DCalCZTSide.TriggerThreshold 50
+DCalCZTSide.EnergyResolution Gauss   40    40   4
+DCalCZTSide.EnergyResolution Gauss  100   100   2
+DCalCZTSide.EnergyResolution Gauss  500   500   5
+DCalCZTSide.EnergyResolution Gauss  1000  1000  10
+DCalCZTSide.EnergyResolution Gauss  2000  2000  30
+DCalCZTSide.EnergyResolution Gauss  5000  5000  75
+
 // Create a block of CZT to add to the passive frame
 Volume CZTSideBlock
 CZTSideBlock.Visibility 1
@@ -79,7 +113,3 @@ Done
 
 PassiveCZTSideFrame_Volume.Position 0. 0. 0.
 PassiveCZTSideFrame_Volume.Mother CZTSideSegment
-
-
-
-
