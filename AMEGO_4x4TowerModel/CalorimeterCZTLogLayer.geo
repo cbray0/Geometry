@@ -1,4 +1,4 @@
-//CZT Detectors confugured in logs
+Constant CZTPositionResolution 1.0
 
 /////Use these lines to run geometry as standalone
 //SurroundingSphere 100.0  0.0  0.0  0.0  100.0
@@ -20,8 +20,8 @@ DCalCZT.DetectorVolume CZTBar
 DCalCZT.StructuralPitch 0 0 0
 DCalCZT.StructuralOffset 0 0 0
 DCalCZT.Positioning XYZ
-DCalCZT.PositionResolution 0. 1.
-DCalCZT.PositionResolution 1000. 1.
+DCalCZT.PositionResolution 0. {CZTPositionResolution}
+DCalCZT.PositionResolution 1000. {CZTPositionResolution}
 DCalCZT.NoiseThreshold 20
 DCalCZT.TriggerThreshold 50
 DCalCZT.EnergyResolution Gauss   40    40   4
@@ -73,8 +73,8 @@ DCalCZTSide.DetectorVolume CZTSideBar
 DCalCZTSide.StructuralPitch 0 0 0
 DCalCZTSide.StructuralOffset 0 0 0
 DCalCZTSide.Positioning XYZ
-DCalCZTSide.PositionResolution 0. 1.
-DCalCZTSide.PositionResolution 1000. 1.
+DCalCZTSide.PositionResolution 0. {CZTPositionResolution}
+DCalCZTSide.PositionResolution 1000. {CZTPositionResolution}
 DCalCZTSide.NoiseThreshold 20
 DCalCZTSide.TriggerThreshold 50
 DCalCZTSide.EnergyResolution Gauss   40    40   4
